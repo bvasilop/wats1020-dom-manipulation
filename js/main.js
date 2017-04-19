@@ -23,7 +23,15 @@ $( document ).ready(function() {
     //      (NOTE: You do not have to perform any validation on the data as
     //          a base requirement.)
 
-    $('#login-form.btn')
+    $('#login-form.btn').on('click', function(){
+
+    $('#login-form').hide();
+
+    $('.user-fullname').text(userInfo.firstName + ' ' + userInfo.lastName);
+
+    $('.user-info').show();
+
+  });
 
 
     // TODO: Create a function to listen for clicks on all the "View Details"
@@ -31,7 +39,7 @@ $( document ).ready(function() {
     // the content contained in the elements with the class "details" in the
     // proper part of the screen.
 
-  
+
     //  create event handler for clicking the 'view details' buttons
     $('.view-details').on('click', function(event) {
     // create variable 'targetElement' for function to target event
