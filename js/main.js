@@ -23,27 +23,33 @@ $( document ).ready(function() {
     //      (NOTE: You do not have to perform any validation on the data as
     //          a base requirement.)
 
+    $('#login-form.btn')
+
 
     // TODO: Create a function to listen for clicks on all the "View Details"
     // buttons so that when a user clicks a "View Details" button they see
     // the content contained in the elements with the class "details" in the
     // proper part of the screen.
-    //      1. When user clicks a "view details" button, find the parent of that element.
-    //      2. Within that parent, find all the elements that have the class `details`.
-    //      3. Toggle visibility of all the elements within that parent with the class `details`.
-    //      4. Change the text of the "view details" button to read "hide details" so the user
-    //          understands they can hide the text again.
 
+  
+    //  create event handler for clicking the 'view details' buttons
     $('.view-details').on('click', function(event) {
-        console.log(event);
+    // create variable 'targetElement' for function to target event
         var targetElement = event.target;
+    //  create variable 'container' in order to tell function where the location of the target is in relation to targetElement
         var container = targetElement.parentElement.parentElement;
+    //  finding 'details' class within container for each element and alter visibility
         $(container).find('.details').each(function( index, el){
-        if ($(el) .is ( ':visible')) {
-            $(el) .fadeOut();
+    //  when element is visible , fade out 'fast'
+        if ($(el) .is ( ':visible')){
+            $(el) .fadeOut('fast');
+    // alter text within button with 'view details' because the 'details' have been hidden by the "fadeOut('fast')"
             targetElement.innerText = "View Details"
+    // allows element to 'fadeIn' when not visible
         } else {
-              $(el).fadeIn();
+              $(el).fadeIn('fast');
+    // alter text within buttons with 'Hide Details' since details are visible with "fadeIn('fast')"
+    // user is able to 'Hide Details'
               targetElement.innerText= "Hide Details"
         }
     });
