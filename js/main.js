@@ -5,8 +5,8 @@
 
 $( document ).ready(function() {
     var userInfo = {
-        firstName: 'Jane',
-        lastName: 'Doe'
+        firstName: 'Bill',
+        lastName: 'Vasilopoulos'
     };
     var voteCounts = {
         great: 0,
@@ -27,7 +27,7 @@ $( document ).ready(function() {
     //use '.btn-sm' class to listen for click
     $('.btn-sm').click(function() {
    // when button is clicked, the '#login-form' field is hidden
-    $('#login-form').hide();
+    $('#login-form').toggle(650);
     // when button is clicked, show '.user-fullname'
     $('.user-info').fadeIn(650);
     // when button is clicked , return 'firstName+lastName'
