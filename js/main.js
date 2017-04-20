@@ -75,4 +75,18 @@ $( document ).ready(function() {
     //      4. Determine the respective percentages (out of 100) for each progress bar.
     //      5. Modify the `width` attribute on each progress bar to set the updated percentage.
 
+    $('button'.vote).on('click', function() {
+
+              var userVote = $(this).data('vote');
+
+              if (userVote == 'great') {
+                        voteCounts.great++;
+                        voteCounts.total++;
+              }
+              else if (userVote == 'greatest') {
+                        voteCounts.greatest++;
+                        voteCounts.total++;
+
+              }
+
 });
