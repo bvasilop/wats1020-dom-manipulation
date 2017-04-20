@@ -27,11 +27,12 @@ $( document ).ready(function() {
     //use '.btn-sm' class to listen for click
     $('.btn-sm').click(function() {
    // when button is clicked, the '#login-form' field is hidden
-    $('#login-form').hide(650);
+    $('#login-form').hide();
     // when button is clicked, show '.user-fullname'
     $('.user-info').fadeIn(650);
     $('.user-info').css({
-       'font-size': $(this).val(7) + 'em'
+       'padding-top': '5px',
+       'font-size': '20px'
     });
     // when button is clicked , return 'firstName+lastName'
     $('.user-fullname').html(userInfo.firstName + '  ' + userInfo.lastName);
