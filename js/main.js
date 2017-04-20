@@ -92,7 +92,12 @@ $( document ).ready(function() {
       // calculate the percentages and update the progress bars
 
               var greatPercent = (voteCounts.great / voteCounts.total) * 100;
-                    $('.great-progress').attr('style', 'width:' + greatPercent + '%');
+                    $('.great-progress').attr('style', 'width: ' + greatPercent + '%');
+
+              var greatestPercent = (voteCounts.greatest / voteCounts.total) * 100;
+                    $('.greatest-progress').attr('style', 'width: ' + greatestPercent + '%');
+
+
 
       });
 });
