@@ -29,7 +29,7 @@ $( document ).ready(function() {
    // when button is clicked, the '#login-form' field is hidden
     $('#login-form').hide();
     // when button is clicked, show '.user-fullname'
-    $('.user-info').show();
+    $('.user-info').fadeIn(500);
     // when button is clicked , return 'firstName+lastName'
     $('.user-fullname').html(userInfo.firstName + '  ' + userInfo.lastName);
 
