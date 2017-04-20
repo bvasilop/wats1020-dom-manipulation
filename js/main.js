@@ -28,7 +28,7 @@ $( document ).ready(function() {
        'margin': '5px 0 5px 5px',
        'font-size': '17px'
     });
-    $('#input.form-control').css({
+    $('.form-control').css({
           'margin': '5px 0 5px 5px',
           'font-size': '17px'
     });
