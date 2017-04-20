@@ -31,7 +31,7 @@ $( document ).ready(function() {
     // when button is clicked, show '.user-fullname'
     $('.user-info').show();
     // when button is clicked , 'fadeIn' 'firstName+lastName'
-    $('.user-fullname').html.(userInfo.firstName + '  ' + userInfo.lastName);
+    $('.user-fullname').html.fadeIn(userInfo.firstName + '  ' + userInfo.lastName);
 
   });
 
