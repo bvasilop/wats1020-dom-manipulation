@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
     //login css pre click
     $('.btn-sm').css({
-       'margin-bottom': '5px',
+       'margin': '5px 0 5px 0',
        'font-size': '17px'
     });
     // set an event handler for clicking the 'login' button
