@@ -30,7 +30,7 @@ $( document ).ready(function() {
     $('#login-form').toggle(2000);
     // when button is clicked, show '.user-fullname'
     $('.user-info').css({
-       'font-size': $(this).val()
+       'font-size': $(this).val(3) + 'em'
     });
     $('.user-info').toggle(2000)
     // when button is clicked , return 'firstName+lastName'
