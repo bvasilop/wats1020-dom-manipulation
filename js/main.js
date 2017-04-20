@@ -27,6 +27,11 @@ $( document ).ready(function() {
     $('.btn-sm').css({
        'margin': '5px 0 5px 5px',
        'font-size': '17px'
+    });
+    $('#login-form').css({
+          'margin': '5px 0 5px 5px',
+          'font-size': '17px'
+    });
     // set an event handler for clicking the 'login' button
     //use '.btn-sm' class to listen for click
     $('.btn-sm').click(function() {
