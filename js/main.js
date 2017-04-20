@@ -23,12 +23,14 @@ $( document ).ready(function() {
     //      (NOTE: You do not have to perform any validation on the data as
     //          a base requirement.)
 
+    // set an event handler for clicking the 'login' button
+    //use '.btn-sm' class to listen for click
     $('.btn-sm').click(function() {
-
+   // when button is clicked, the '#login-form' field is hidden
     $('#login-form').hide();
-
+    // when button is clicked, show '.user-fullname'
     $('.user-info').show();
-
+    // when button is clicked , 'fadeIn' 'firstName+lastName'
     $('.user-fullname').html.fadeIn( userInfo.firstName + '  ' + userInfo.lastName);
 
   });
