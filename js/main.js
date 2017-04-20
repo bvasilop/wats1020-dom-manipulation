@@ -27,9 +27,9 @@ $( document ).ready(function() {
     //use '.btn-sm' class to listen for click
     $('.btn-sm').click(function() {
    // when button is clicked, the '#login-form' field is hidden
-    $('#login-form').toggle(650);
+    $('#login-form').toggle(1200);
     // when button is clicked, show '.user-fullname'
-    $('.user-info').fadeIn(650);
+    $('.user-info').fadeIn();
     // when button is clicked , return 'firstName+lastName'
     $('.user-fullname').html(userInfo.firstName + '  ' + userInfo.lastName);
 
