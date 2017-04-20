@@ -63,7 +63,7 @@ $( document ).ready(function() {
               targetElement.innerText= "Hide Details"
         }
     });
-  })
+  });
 
     // TODO: Create a function that listens for clicks on the voting buttons and
     // looks at the `data-vote` attribute on each button to see what was voted for,
