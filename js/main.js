@@ -75,7 +75,7 @@ $( document ).ready(function() {
     //      4. Determine the respective percentages (out of 100) for each progress bar.
     //      5. Modify the `width` attribute on each progress bar to set the updated percentage.
 
-    $('button'.vote).on('click', function(event) {
+    $('button.vote').on('click', function(event) {
 
               var userVote = $(this).data('vote');
 
