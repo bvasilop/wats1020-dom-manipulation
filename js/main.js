@@ -30,8 +30,8 @@ $( document ).ready(function() {
     $('#login-form').hide();
     // when button is clicked, show '.user-fullname'
     $('.user-info').show();
-    // when button is clicked , 'fadeIn' 'firstName+lastName'
-    $('.user-fullname').html.fadeIn( userInfo.firstName + '  ' + userInfo.lastName);
+    // when button is clicked , firstName+lastName' is added
+    $('.user-fullname').html.( userInfo.firstName + '  ' + userInfo.lastName);
 
   });
 
