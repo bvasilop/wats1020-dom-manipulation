@@ -28,11 +28,11 @@ $( document ).ready(function() {
     $('.btn-sm').click(function() {
    // when button is clicked, the '#login-form' field is hidden
    $('.btn-sm').css({
-      'padding-top': '5px',
-      'font-size': '20px'
+      'margin-bottom': '5px',
+      'font-size': '17px'
    });
     $('#login-form').hide();
-    
+
     // when button is clicked, show '.user-fullname'
     // fade in at 650ms
     $('.user-info').fadeIn(650);
