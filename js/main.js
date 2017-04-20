@@ -29,7 +29,7 @@ $( document ).ready(function() {
 
     $('.user-info').show();
 
-    $('.user-fullname').html (userInfo.firstName + '  ' + userInfo.lastName);
+    $('.user-fullname').html ('Welcome, ' + '  'userInfo.firstName + '  ' + userInfo.lastName);
 
   });
 
