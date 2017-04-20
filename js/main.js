@@ -52,12 +52,12 @@ $( document ).ready(function() {
         $(container).find('.details').each(function( index, el){
     //  when element is visible , fade out 'fast'
         if ($(el) .is ( ':visible')){
-            $(el) .fadeOut(500);
+            $(el) .fadeOut(650);
     // alter text within button with 'view details' because the 'details' have been hidden by the "fadeOut('fast')"
             targetElement.innerText = "View Details"
     // allows element to 'fadeIn' when not visible
         } else {
-              $(el).fadeIn(500);
+              $(el).fadeIn(650);
     // alter text within buttons with 'Hide Details' since details are visible with "fadeIn('fast')"
     // user is able to 'Hide Details'
               targetElement.innerText= "Hide Details"
