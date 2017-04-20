@@ -29,7 +29,9 @@ $( document ).ready(function() {
    // when button is clicked, the '#login-form' field is hidden
     $('#login-form').hide();
     // when button is clicked, show '.user-fullname'
+    // fade in at 650ms
     $('.user-info').fadeIn(650);
+    // use css to add padding to top and increase font size 
     $('.user-info').css({
        'padding-top': '5px',
        'font-size': '20px'
