@@ -23,13 +23,13 @@ $( document ).ready(function() {
     //      (NOTE: You do not have to perform any validation on the data as
     //          a base requirement.)
 
-    $('.login-btn').click(function() {
+    $('.btn-sm').click(function() {
 
-    $('.login-btn').hide();
+    $('#login-form').hide();
 
-    $('.form-control').hide();
+    $('.user-info').show();
 
-    $('.user-info').show().html ('Welcome ' + userInfo.firstName + ' ' + userInfo.lastName);
+    $('.user-fullname').html (userInfo.firstName + '  ' + userInfo.lastName);
 
   });
 
